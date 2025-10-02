@@ -1,19 +1,38 @@
-var x=3;
-let name="Buvanesha";
-const pi=3.14;
-
-console.log(x);
-console.log(name);
-console.log(pi);
-document.write(x);
-document.write(name);
-document.write(pi);
-
-function add(a,b){
-    console.log("this is function "+(a+b));
+let x = 10;
+function sendmessage() {
+  console.log("Welcome to js    ");
+  console.log(x);
 }
- add(4,5);
-    let a=parseInt(prompt("entere the number"));
-    let b =parseInt(prompt("enter the second number:"));
+sendmessage();
+console.log(x);
 
-alert(a+b);
+function check() {
+  if (true) {
+    let name = "Webdevelopment";
+    var iscloudy = true;
+    console.log(name);
+  }
+  console.log(iscloudy);
+}
+check();
+
+//call back function in js is a function that is passed as an argument to another function,and it is executedafter the completion of that function
+function first() {
+  console.log("This is my first function");
+}
+first();
+function second(callback) {
+  console.log("This is my second function");
+  setInterval(callback, 2000);
+}
+second(first);
+
+let count = 0;
+let input = () => {
+  count++;
+  console.log(count);
+  if (count == 5) {
+    InputDeviceInfo();
+  }
+};
+input();
