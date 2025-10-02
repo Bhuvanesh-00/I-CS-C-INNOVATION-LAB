@@ -49,4 +49,5 @@ console.log(gradestudent);
 console.log("---Splice---")
 let names=["Aishu","Josh","Joe"];
 names.splice(2,1,"David");
+
 console.log(names);
